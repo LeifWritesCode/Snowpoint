@@ -1,0 +1,25 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <PackageId>Snowpoint</PackageId>
+    <Version>0.2.1</Version>
+    <Authors>Leif Walker-Grant</Authors>
+    <Company>Leif Walker-Grant</Company>
+    <Product>Snowpoint</Product>
+    <RepositoryType>GitHub</RepositoryType>
+    <RepositoryUrl>https://github.com/LeifWritesCode/Snowpoint</RepositoryUrl>
+    <PackageProjectUrl>https://github.com/LeifWritesCode/Snowpoint</PackageProjectUrl>
+    <PackageLicenseExpression>MPL-2.0</PackageLicenseExpression>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="7.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="$(SolutionDir)README.md" Pack="true" PackagePath="" />
+  </ItemGroup>
+</Project>
